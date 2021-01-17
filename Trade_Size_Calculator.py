@@ -14,8 +14,7 @@ def tsc1():
         print('How much leverage do you have? If 50:1, put 50. If 1:1, put 1.')
         l1 = float(input())
         print('Your Trade size should be')
-        print((l1 * (ab1 - (ab1 - am1))) / 20)
-    
+        print((l1 * am1) / 20)
     elif tsl1 == 'b':
         print('What is your account balance?')
         ab2 = float(input())
@@ -24,7 +23,7 @@ def tsc1():
         print('How much leverage do you have? If 50:1, put 50. If 1:1, put 1.')
         l2 = float(input())
         print('Your Trade size should be')
-        print((l2 * (ab2 - (ab2 - am2))) / 10)
+        print((l2 * am2) / 10)
     elif tsl1 == 'a':
         print('What is your account balance?')
         ab3 = float(input())
@@ -33,7 +32,7 @@ def tsc1():
         print('How much leverage do you have? If 50:1, put 50. If 1:1, put 1.')
         l3 = float(input())
         print('Your Trade size should be')
-        print((l3 * (ab3 - (ab3 - am3))) / 5)
+        print((l3 * am3) / 5)
     else:
         print('Invalid Input, Try again')
 
